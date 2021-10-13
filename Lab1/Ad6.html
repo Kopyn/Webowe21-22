@@ -4,22 +4,99 @@
    <head>
       <meta charset = "utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="keywords" content="słowo_kluczowe 1, słowo_kluczowe 2"/>
+      <meta name="description" content="Form">
+      <meta name="keywords" content="form"/>
       <title>Ad6</title>
    </head>
 
    <body>
-      <a href="Ad1.html">Ad.1</a>
-	  <br/>
-	  <a href="Ad2.html">Ad.2</a>
-	  <br/>
-	  <a href="Ad3.html">Ad.3</a>
-	  <br/>
-	  <a href="Ad4.html">Ad.4</a>
-	  <br/>
-	  <a href="Ad5.html">Ad.5</a>
-	  <br/>
-	  <a href="Ad6.html">Ad.6</a>
+
+    <form method = "post" action = "https://www.google.com/">
+
+       <p><label>Name: 
+             <input name = "name" type = "text" size = "25">
+          </label></p>
+
+       <p><label>Surname:
+            <input name = "surname" type = "text" size = "25">
+       </label></p>
+
+       <p><label>E-mail Address: 
+          <input name = "email" type = "password"  size = "25">
+       </label></p>              
+
+       <p>
+           Checkbox<br/>
+          <label>1
+             <input name = "checkbox" type = "checkbox" 
+                value = "1"></label>
+          <label>2
+             <input name = "checkbox" type = "checkbox" 
+                value = "2"></label>
+          <label>3
+             <input name = "checkbox" type = "checkbox" 
+                value = "3"></label> 
+          <label>4
+             <input name = "checkbox" type = "checkbox" 
+                value = "4"></label>
+          <label>5
+             <input name = "checkbox" type = "checkbox" 
+                value = "5"></label>
+       </p>
+
+       <p>
+            Radio<br/>
+          <label>1
+             <input name = "radio" type = "radio"
+                value = "1" checked></label>
+          <label>2
+             <input name = "radio" type = "radio" 
+                value = "2"></label> 
+          <label>3
+             <input name = "radio" type = "radio" 
+                value = "3"></label>
+          <label>4
+             <input name = "radio" type = "radio" 
+                value = "4"></label>
+          <label>5
+             <input name = "radio" type = "radio" 
+                value = "5"></label>
+       </p>
+
+
+       <p>
+          <label>Grouped list: 
+
+             <select name = "checkbox">
+                <option selected>list</option>
+                <optgroup label=">4">
+                    <option>10</option>
+                    <option>9</option>
+                    <option>8</option>
+                    <option>7</option>
+                    <option>6</option>
+                    <option>5</option>
+                </optgroup>
+                <optgroup label="<=4">
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1</option>
+                </optgroup>
+                <option>Awful</option>
+             </select>
+          </label>
+       </p>
+
+       <p><label>Text area:<br>
+        <textarea name = "text-area"
+           maxlength="200"></textarea>
+     </label></p>
+
+       <p>
+          <input type = "submit" value = "Submit">
+          <input type = "reset" value = "Clear">
+       </p>   
+    </form>
    </body>
 </html>
